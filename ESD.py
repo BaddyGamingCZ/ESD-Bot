@@ -4,6 +4,7 @@ from discord.ext import commands
 import asyncio
 import time
 import random
+import os
 from discord import Game
 
 
@@ -54,3 +55,4 @@ async def on_message(message):
     if message.content == '?updatelog':
         await client.send_message(message.channel, 'Update Log: \nAdded coin flip command and credits.')
 client.run('NTYwMTc2MTk3MzgwNzM0OTk3.D3yvdw.m-6xv6KZlL_LUgH7SFueIYC-_-A')
+client.run(os.getenv('TOKEN'))
