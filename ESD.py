@@ -54,5 +54,5 @@ async def on_message(message):
         await client.send_message(message.channel, 'Commands: \nprefix: ?  \ninfofamas \ninfotommygun \ninfospywatch \ninfojetpack \ninfogarand \ninfoxm8 \ninforemington \ninfoballisticfist \nversion \nupdatelog \ncoinflip \ncredits')
     if message.content == '?updatelog':
         await client.send_message(message.channel, 'Update Log: \nAdded coin flip command and credits.')
-client.run('NTYwMTc2MTk3MzgwNzM0OTk3.D3yvdw.m-6xv6KZlL_LUgH7SFueIYC-_-A')
+        
 client.run(os.getenv('TOKEN'))
