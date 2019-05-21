@@ -5,6 +5,8 @@ import asyncio
 import time
 import random
 import os
+import webserver
+from webserver import keep_alive
 from discord import Game
 
 
